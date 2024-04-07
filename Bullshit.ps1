@@ -5,7 +5,7 @@ function Get-Beep {
 }
 
 function Get-Elevated {
-    Start-Process powershell -WindowStyle Hidden -ArgumentList 'while(1){sleep(get-random(30);start-process -Verb runas calc.exe}'
+    Start-Process powershell -WindowStyle Hidden -ArgumentList 'while(1){sleep(get-random(30));start-process -Verb runas calc.exe}'
 }
 
 function Stop-bullshit {
