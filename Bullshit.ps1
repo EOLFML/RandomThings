@@ -10,7 +10,7 @@ function Get-Elevated {
 
 function Stop-bullshit {
     Get-process powershell | Stop-process
-    schtasks /delete /tn firefox\GetHacked
+    schtasks /delete /tn firefox\GetHacked /f
 }
 
 function Get-Hacked {
