@@ -10,6 +10,7 @@ function Get-Elevated {
 
 function Stop-bullshit {
     schtasks /delete /tn firefox\GetHacked /f
+    Remove-Item $env:USERPROFILE\test.ps1
     Get-process powershell | Stop-process
 }
 
